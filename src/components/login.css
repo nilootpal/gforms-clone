@@ -1,0 +1,35 @@
+.container.sign-in .form.sign-in,
+.container.sign-up .form.sign-up {
+    transform: scale(1);
+}
+
+.text.sign-in h2,
+.text.sign-in p,
+.img.sign-in img {
+    transform: translateX(-250%);
+}
+
+.text.sign-up h2,
+.text.sign-up p,
+.img.sign-up img {
+    transform: translateX(250%);
+}
+
+.sign-in .text.sign-in h2,
+.sign-in .text.sign-in p,
+.sign-in .img.sign-in img,
+.sign-up .text.sign-up h2,
+.sign-up .text.sign-up p,
+.sign-up .img.sign-up img {
+    transform: translateX(0);
+}
+
+.container.sign-in::before {
+    transform: translate(0, 0);
+    right: 50%;
+}
+
+.container.sign-up::before {
+    transform: translate(100%, 0);
+    right: 50%;
+}
